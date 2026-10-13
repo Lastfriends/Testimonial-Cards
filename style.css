@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: start;
+}
+
+.review .testimonial {
+  min-width: 0;
+}
+
+.review .testimonial .box {
+  padding: 20px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.4;
+  position: relative;
+}
+
+/* First card: dark speech bubble */
+.review .testimonial:first-child .box {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.review .testimonial:first-child .box::after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 35px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #1f1f1f transparent transparent;
+}
+
+/* Second card: white box */
+.review .testimonial.second .box {
+  background-color: white;
+  color: #222;
+}
+
+/* Paragraph spacing */
+.review .testimonial .box > p {
+  margin: 0 0 25px;
+}
+
+/* Profile image and text */
+.review .testimonial .user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review .testimonial .user img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* First profile below its box */
+.review .testimonial:first-child > .user {
+  margin: 18px 10px 0;
+}
+
+.review .testimonial.second .box {
+  margin: auto 50px;
+  padding: 30px;
+}
+
+/* Second profile inside its box */
+.review .testimonial.second .user {
+  margin-top: 28px;
+}
+
+.review .testimonial.third img {
+  height: 18rem;
+  width: 16rem;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review .testimonial.third .box {
+  height: 18rem;
+  width: 30rem;
+  padding: 3px 18px;
+  border: 1px solid #222;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.4;
+  position: relative;
+  background: #1f1f1f;
+  color: white;
+}
+
+.review .testimonial.third .box .stars {
+  color: rgb(251, 255, 0);
+  font-size: 20px;
+  padding-top: 25px;
+}
+
+.review .testimonial.third .engineer h3 {
+  font-family: "Inter", sans-serif;
+}
+
+.review .testimonial.third .engineer h4 {
+  color: rgb(146, 144, 144);
+}
+
+.review .testimonial.third p {
+  font-size: 16px;
+}
+
+.testimonial-carousel {
+  width: 580px;
+  max-width: 100%;
+  min-height: 260px;
+  border: 1.5px solid #555;
+  border-radius: 20px;
+  padding: 32px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.testimonial-text {
+  max-width: 450px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #333;
+  margin: 0 0 32px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile.active {
+  width: 54px;
+  height: 54px;
+  opacity: 1;
+}
+
+.profile.faded {
+  opacity: 0.35;
+}
+
+.arrow {
+  border: none;
+  background: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.person-name {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 12px 0 0;
+  color: #222;
+}

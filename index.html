@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="review">
+      <h1 class="heading">Testimonial Cards</h1>
+
+      <div class="box-container">
+        <!-- First testimonial -->
+        <div class="testimonial">
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit eros eget urna mattis, eget hendrerit sapien feugiat.
+              Integer non ex ex. Mauris maximus augue sed nunc rhoncus,
+              sollicitudin facilisis ex mattis.
+            </p>
+
+            <div class="feedback">
+              <h4>Highly recommended!</h4>
+            </div>
+          </div>
+
+          <div class="user">
+            <img src="images/pic-1.png" alt="Artem Jones" />
+
+            <div class="user-info">
+              <h3>Artem Jones</h3>
+              <h4>Junior Frontend Developer</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second testimonial -->
+        <div class="testimonial second">
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              suscipit eros eget urna mattis, eget hendrerit sapien feugiat.
+              Integer non ex ex. Mauris maximus augue sed nunc rhoncus,
+              sollicitudin facilisis ex mattis.
+            </p>
+            <div class="user">
+              <img src="images/pic-2.png" alt="" />
+              <div class="user-info">
+                <h3>John Doe</h3>
+                <h4>Junior Frontend Developer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Third testimonial-->
+        <div class="testimonial third">
+          <div class="user">
+            <img src="images/pic-3.png" alt="" />
+            <div class="box">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="engineer">
+                <h2>Mohammad Ali</h2>
+                <h4>Engineer Manager</h4>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                suscipit eros eget urna mattis, eget hendrerit sapien feugiat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial carousel Card -->
+    <section class="testimonial-carousel">
+      <p class="testimonial-text">
+        roadmap.sh is an incredible resource. I was fortunate to discover it
+        during my university days in 2018. Back then, it was just a single
+        repository with three images. It's amazing to see how much impact it has
+        had on millions of lives since then.
+      </p>
+      <div class="carousel">
+        <button class="arrow" type="button" aria-label="Previous testimonial">
+          &#10094;
+        </button>
+
+        <div class="profiles">
+          <img
+            class="profile faded"
+            src="images/pic-1.png"
+            alt="Previous person"
+          />
+          <img
+            class="profile active"
+            src="images/pic-2.png"
+            alt="Artem Jones"
+          />
+          <img class="profile faded" src="images/pic-3.png" alt="Next person" />
+        </div>
+        <button class="arrow" type="button" aria-label="Next testimonial">
+          &#10095;
+        </button>
+      </div>
+      <h3 class="person-name">John Doe</h3>
+    </section>
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
